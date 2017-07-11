@@ -9,23 +9,7 @@
 
     <main class="page-content" aria-label="Content">
 
-      <section class="wrapper section__1">
-        <img src="{{ site.baseurl }}/assets/img/cover-image.jpg" alt="Photo of busy street with datasets visible." />
-        {% capture introduction %}{% include_relative /introduction.md %}{% endcapture %}
-        {{ introduction | markdownify }}
-      </section>
-
-      <section class="wrapper section__2">
-        <img src="{{ site.baseurl }}/assets/img/cover-image.jpg" alt="Photo of busy street with datasets visible." />
-        {% capture openDataValues %}{% include_relative /6-open-data-values.md %}{% endcapture %}
-{{ openDataValues | markdownify }}
-      </section>
-
-      <section class="wrapper section__3">
-        <img src="{{ site.baseurl }}/assets/img/cover-image.jpg" alt="Photo of busy street with datasets visible." />
-        {% capture timeline %}{% include_relative /timeline.md %}{% endcapture %}
-{{ timeline | markdownify }}
-      </section>
+      {{ content }}
 
     </main>
 

@@ -1,5 +1,5 @@
 ---
-title: Report
+title: Table of Contents
 layout: report
 ---
 

@@ -1,0 +1,12 @@
+---
+layout: report
+---
+
+<div class="wrapper">
+
+  {% capture participating %}{% include /content/6-participating-agencies.md %}{% endcapture %}
+  {{ participating | markdownify }}
+
+  {{ content }}
+
+</div>

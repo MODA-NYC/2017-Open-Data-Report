@@ -1,0 +1,12 @@
+---
+layout: report
+---
+
+<div class="wrapper">
+
+  {% capture values %}{% include /content/2-six-open-data-values.md %}{% endcapture %}
+  {{ values | markdownify }}
+
+  {{ content }}
+
+</div>

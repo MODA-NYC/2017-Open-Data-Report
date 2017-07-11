@@ -1,5 +1,7 @@
 # 6 Open Data Values
 
+![open data value icon]({{ site.baseurl }}/assets/img/test-icon.png){:class="testClass"}
+
 ## Start with Users
 
 The first step in opening data is focusing on demand. This spring, the Open Data team partnered with Reboot, a social impact firm dedicated to inclusive development and accountable governance, to better understand current users of Open Data, as well as identify new user groups and engagement tactics for New Yorkers who our efforts to date have not reached. In May, Reboot publicly presented the results of their research, which leveraged applied urban ethnography and design research to build user personas and a memo featuring actionable recommendations on how to engage new users. This research is giving us the evidence we need to be strategic and tactical about engaging with the spur demand in communities less familiar to Open Data.

@@ -3,3 +3,25 @@
 ---
 
 @import "minima";
+
+// 0. Variables
+
+$sans-serif: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// 1. Site-wide Typography
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $sans-serif;
+}
+
+.site-title {
+  font-family: $sans-serif;
+  line-height: 1;
+}
+
+.site-footer {
+  background: #76A3C8;
+}

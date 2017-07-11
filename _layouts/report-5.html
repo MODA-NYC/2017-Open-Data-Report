@@ -1,0 +1,14 @@
+---
+layout: report
+---
+
+<img class="featureImage" src="{{ site.baseurl }}/assets/img/intro-image.jpg" alt="A man speaks in front of a crowd at a Civic Hall event." />
+
+<div class="wrapper">
+
+  {% capture compliance %}{% include /content/5-policy-and-compliance.md %}{% endcapture %}
+  {{ compliance | markdownify }}
+
+  {{ content }}
+
+</div>
