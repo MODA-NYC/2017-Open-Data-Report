@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="fullBleed">
+      <img src="{{ site.baseurl }}/assets/img/cover-image.jpg" alt="Photo of busy street with datasets visible." />
+    </div>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+
+        <div class="home">
+
+          <h1 class="page-heading">Posts</h1>
+
+          {{ content }}
+
+          <ul class="post-list">
+            {% for post in site.posts %}
+              <li>
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+                <h2>
+                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h2>
+              </li>
+            {% endfor %}
+          </ul>
+
+          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+        </div>
+      </div>
+    </main>
+
+    <div>
+      <!--
+  If possible, insert the following lines into your <head>.
+-->
+
+<script>window.jQuery || document.write('<script src="//code.jquery.com/jquery-2.2.3.min.js"><\/script>')</script>
+
+<link href="//d3q1ytufopwvkq.cloudfront.net/1/formrenderer.css" rel="stylesheet" />
+<script src="//d3q1ytufopwvkq.cloudfront.net/1/formrenderer.js"></script>
+
+<!-- Insert everything below in the <body>. -->
+
+<form data-formrenderer>This form requires JavaScript to complete.</form>
+<small style='display:inline-block;margin-top:10px;background:rgba(0,0,0,0.1);padding:5px 10px;border-radius:10px;'>Powered by <a href='https://www.dobt.co/screendoor/'>Screendoor</a>.</small>
+
+<script>
+  // Uncomment this line and set it to the CSS class that your website uses for buttons:
+  // FormRenderer.BUTTON_CLASS = '';
+  new FormRenderer({"project_id":"mpvWfIeLBrbpLqil"});
+</script>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
