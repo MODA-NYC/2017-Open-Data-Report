@@ -7,6 +7,8 @@
 // 0. Variables
 
 $sans-serif: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: 'Lora', serif;
+
 $blue: #5CA6CC;
 $yellow: #FFC50F;
 $red: #DD5857;
@@ -23,6 +25,14 @@ h4 {
   font-family: $sans-serif;
   font-weight: 700;
   line-height: 1;
+}
+
+p {
+  color: $darkGrey;
+  font-family: $serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
