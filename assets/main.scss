@@ -166,7 +166,13 @@ p.small {
 
   ul {
     justify-content: center;
+    margin: 0;
     padding: 2rem;
+
+    @include media-query($on-palm) {
+      flex-wrap: wrap;
+      padding: .5rem 1rem;
+    }
   }
 
   li {
@@ -175,8 +181,21 @@ p.small {
     max-width: 11rem;
     margin: 0;
 
+    @include media-query($on-palm) {
+      flex-basis: 50%;
+    }
+
     &:first-child a {
       border-left: 0;
+    }
+
+    &:nth-child(2n+2) {
+
+      a {
+        @include media-query($on-tablet) {
+          border-right: 0;
+        }
+      }
     }
 
     .boldNumber {
@@ -184,6 +203,10 @@ p.small {
 
       @include media-query($on-tablet) {
         font-size: 2.5rem;
+      }
+
+      @include media-query($on-palm) {
+        font-size: 2rem;
       }
     }
 
@@ -195,10 +218,14 @@ p.small {
       @include media-query($on-tablet) {
         font-size: 1.3rem;
       }
+
+      @include media-query($on-palm) {
+        font-size: 1.1rem;
+      }
     }
 
     a {
-      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
       border-top: 1px solid #fff;
       display: block;
       padding: 1rem;
