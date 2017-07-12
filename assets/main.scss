@@ -4,7 +4,16 @@
 
 @import "minima";
 
-// 0. Variables
+// 0. Mixins & Variables
+
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 600px)  { @content; }
+  }
+}
 
 $sans-serif: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: 'Lora', serif;
@@ -14,6 +23,9 @@ $yellow: #FFC50F;
 $red: #DD5857;
 $grey: #AAA7A6;
 $darkGrey: #343333;
+
+$arrowLeft: 16px 16px 16px 0;
+$arrowRight: 16px 0 16px 16px;
 
 // 1. Typography
 
@@ -43,6 +55,20 @@ h2 {
   font-size: 2rem;
 }
 
+blockquote {
+  border: 0;
+  padding: 2rem 0;
+}
+
+blockquote,
+blockquote p {
+  font-family: $sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 // 2. Modifiers
 
 .grey {
@@ -65,4 +91,118 @@ h2 {
 
 .site-footer {
   background: $blue;
+}
+
+// 4. Timeline Styles
+
+.timeline__section {
+  position: relative;
+}
+
+.timeline__section__heading {
+  position: absolute;
+  font-size: 4rem;
+  font-family: $sans-serif;
+  font-weight: 700;
+  margin: 20px 0 0 30px;
+  color: $grey;
+  z-index: 0;
+
+  @include breakpoint('tablet') {
+    font-size: 20px;
+  }
+}
+
+.timeline__meta {
+  display: block;
+  font-size: .8rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  opacity: .6;
+
+  &::after {
+    content: '';
+    display: block;
+    background: rgba(255,255,255,.6);
+    height: 1px;
+    width: 40px;
+    margin-top: 5px;
+  }
+}
+
+.timeline__activityTitle {
+  display: block;
+  font-family: $sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  //
+  ul {
+    //
+    li {
+      list-style-type: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: #000;
+
+      div {
+        border-top: 2px solid;
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 15px;
+        font-family: $serif;
+        /* Animation */
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 2.2rem;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: inherit;
+        /* animation */
+        transition: all .5s ease-in-out;
+      }
+
+      &:nth-child(odd) div {
+        left: 1.1rem;
+        /* Animation */
+        transform: translate3d(200px, 0, 0);
+      }
+
+      &:nth-child(even) div {
+        left: -439px;
+        /* Animation */
+        transform: translate3d(-200px, 0, 0);
+      }
+
+      &.in-view {
+        //
+        &::after {
+          background: #000;
+        }
+
+        div {
+          /* Animation */
+          transform: none;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
