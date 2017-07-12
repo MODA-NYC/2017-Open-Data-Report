@@ -53,6 +53,7 @@ layout: report
 
 <div class="flexContentWrapper">
   <div class="flexSidebar__left metaContent">
+    <span class="boldNumber">3</span>
     <div class="borderTop">
       <p><span class="light">Name:</span><br />
         Nandan Shetty
@@ -94,28 +95,158 @@ layout: report
 
 </div>
 
+<div class="flexContentWrapper">
 
+  <div class="flexSidebar__left metaContent">
+    <img src="{{ site.baseurl }}/assets/img/userstory-4.png" alt="VaNessa LaNeir and a man stand and smile for the camera." />
+  </div>
+
+  <div class="flexContent">
+    {% capture story4 %}{% include /content/4.4-user-story.md %}{% endcapture %}
+    {{ story4 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“It’s a great resource to address a specific problem, and a great research tool to enforce the work that we do, and make it stronger.”</p>
+    </blockquote>
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img src="{{ site.baseurl }}/assets/img/userstory-5.png" alt="Lauren Santorso smiles while a young boy colors beside her. " />
+
+  </div>
+
+  <div class="flexContent">
+    {% capture story5 %}{% include /content/4.5-user-story.md %}{% endcapture %}
+    {{ story5 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<img class="userFeature" src="{{ site.baseurl }}/assets/img/userstory-6.jpg" alt="Mary Tobin holding a microphone and addressing the person sitting next to her." />
+
+<div class="flexContentWrapper">
+  <div class="flexSidebar__left metaContent">
+    <span class="boldNumber">6</span>
+    <div class="borderTop">
+      <p><span class="light">Name:</span><br />
+        Mary Tobin
+      </p>
+      <p><span class="light">Lives:</span>
+        Neighborhood,<br />
+        Brooklyn
+      </p>
+      <p><span class="light">Occupation:</span><br />
+        Principal at Community Solutions; Director of the Brownsville Partnership Works in Brownsville
+      </p>
+    </div>
+  </div>
+
+  <div class="flexContent">
+    {% capture story6 %}{% include /content/4.6-user-story.md %}{% endcapture %}
+    {{ story6 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“The importance of data in the work that I do—it’s everything, it’s the foundation.”</p>
+    </blockquote>
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img src="{{ site.baseurl }}/assets/img/userstory-7.png" alt="An auditorium of students waves while the front row holds up a large check." />
+  </div>
+
+  <div class="flexContent">
+    {% capture story7 %}{% include /content/4.7-user-story.md %}{% endcapture %}
+    {{ story7 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“There’s two ways I use Open Data in my work - I push others to provide more open data, and I pull by looking at Open Data that exists and seeing how it can be applied to my work.”</p>
+    </blockquote>
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img src="{{ site.baseurl }}/assets/img/userstory-8.png" alt="Harpreet Singh Wahan smiling." />
+  </div>
+
+  <div class="flexContent">
+    {% capture story8 %}{% include /content/4.8-user-story.md %}{% endcapture %}
+    {{ story8 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<img class="userFeature" src="{{ site.baseurl }}/assets/img/userstory-9.jpg" alt="Lester Barret sits and talks with Noel Hidalgo and Goldman." />
+
+<div class="flexContentWrapper">
+  <div class="flexSidebar__left metaContent">
+    <span class="boldNumber">9</span>
+    <div class="borderTop">
+      <p><span class="light">Name:</span><br />
+        Lester Barrett
+      </p>
+      <p><span class="light">Lives:</span>
+        Neighborhood,<br />
+        Brooklyn
+      </p>
+      <p><span class="light">Occupation:</span><br />
+        Computer Science Student, Medgar Evars College
+      </p>
+    </div>
+    <div class="borderTop">
+      <p><span class="light">Name:</span><br />
+        Shalom Joseph
+      </p>
+      <p><span class="light">Lives:</span>
+        Nassau County,<br />
+        Long Island
+      </p>
+      <p><span class="light">Occupation:</span><br />
+        Data Analyst, Leviton
+      </p>
+    </div>
+  </div>
+
+  <div class="flexContent">
+    {% capture story9 %}{% include /content/4.9-user-story.md %}{% endcapture %}
+    {{ story9 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“Open Data is the reason why we’re able to excel in any aspect of what we’re trying to learn.”</p>
+    </blockquote>
+
+  </div>
+
+</div>
 
 <div class="wrapper">
-
-
-  {% capture story4 %}{% include /content/4.4-user-story.md %}{% endcapture %}
-  {{ story4 | markdownify }}
-
-  {% capture story5 %}{% include /content/4.5-user-story.md %}{% endcapture %}
-  {{ story5 | markdownify }}
-
-  {% capture story6 %}{% include /content/4.6-user-story.md %}{% endcapture %}
-  {{ story6 | markdownify }}
-
-  {% capture story7 %}{% include /content/4.7-user-story.md %}{% endcapture %}
-  {{ story7 | markdownify }}
-
-  {% capture story8 %}{% include /content/4.8-user-story.md %}{% endcapture %}
-  {{ story8 | markdownify }}
-
-  {% capture story9 %}{% include /content/4.9-user-story.md %}{% endcapture %}
-  {{ story9 | markdownify }}
 
   {{ content }}
 
