@@ -77,7 +77,8 @@ blockquote p {
 
 .commentForm {
   border-top: 1px solid #000;
-  padding: 2rem 0 0;
+  margin: auto;
+  padding: 2rem 1.5rem 0;
 }
 
 input[type=text] {
@@ -106,6 +107,11 @@ p.small {
   font-weight: 500;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .borderTop {
   position: relative;
   margin-top: 3.5rem;
@@ -122,6 +128,36 @@ p.small {
 }
 
 // 3. Element  Styles
+
+button {
+  background: none;
+  border: 3px solid $darkGrey;
+  display: block;
+  font-size: 1.4rem;
+  font-family: $sans-serif;
+  font-weight: 700;
+  margin: 2rem auto;
+  padding: 1rem;
+  transition: .2s all ease;
+
+  &:hover {
+    background: rgba(0,0,0,.1);
+  }
+
+  a {
+    transition: .2s all ease;
+
+    &:link,
+    &:active,
+    &:visited {
+      color: $darkGrey;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
 
 .site-header {
   border: 0;
@@ -185,8 +221,8 @@ p.small {
       flex-basis: 50%;
     }
 
-    &:first-child a {
-      border-left: 0;
+    &:nth-child(6) a {
+      border-right: 0;
     }
 
     &:nth-child(2n+2) {
