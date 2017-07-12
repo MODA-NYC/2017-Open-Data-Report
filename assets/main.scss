@@ -55,6 +55,7 @@ p {
 h1 {
   font-size: 3rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 h2 {
@@ -128,6 +129,10 @@ p.small {
 }
 
 // 3. Element  Styles
+
+.page-content {
+  padding: 0;
+}
 
 button {
   background: none;
@@ -347,6 +352,7 @@ button {
 .flexSidebar__left,
 .flexSidebar__right {
   flex: 1;
+  min-width: 14rem;
 }
 
 .userFeature {
@@ -395,7 +401,9 @@ button {
 .timeline__activityTitle {
   display: block;
   font-family: $sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
