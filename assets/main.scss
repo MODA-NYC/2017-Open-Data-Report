@@ -233,7 +233,7 @@ button {
     &:nth-child(2n+2) {
 
       a {
-        @include media-query($on-tablet) {
+        @include media-query($on-palm) {
           border-right: 0;
         }
       }
