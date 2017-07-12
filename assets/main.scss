@@ -49,6 +49,7 @@ p {
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -67,6 +68,16 @@ blockquote p {
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.commentForm {
+  border-top: 1px solid #000;
+  padding: 2rem 0 0;
+}
+
+input[type=text] {
+  font-size: 1.2rem;
+  padding: .8rem 1rem;
 }
 
 // 2. Modifiers
@@ -91,6 +102,11 @@ blockquote p {
 
 .site-footer {
   background: $blue;
+}
+
+.featureImage {
+  display: block;
+  margin: 0 auto 3rem;
 }
 
 // 4. Timeline Styles

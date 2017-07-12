@@ -1,0 +1,12 @@
+---
+layout: report
+---
+
+<div class="wrapper">
+
+  {% capture futureReleases %}{% include /content/7.1-future-releases.md %}{% endcapture %}
+  {{ futureReleases | markdownify }}
+
+  {{ content }}
+
+</div>
