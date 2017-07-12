@@ -1,11 +1,9 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">Open Data for All<br /><span class="grey">2017 Progress Report</span></a></a>
 
-    {% if page_paths %}
+    <a class="site-title" href="{{ site.baseurl }}/">Open Data for All<br /><span class="grey">2017 Progress Report</span></a></a>
+
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -19,14 +17,12 @@
         </label>
 
         <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
+
+          <a class="page-link" href="{{ site.baseurl }}/report/">Report</a>
+          <a class="page-link" href="{{ site.baseurl }}/about/">About</a>
+          <a class="page-link" href="{{ site.baseurl }}/contact/">Contact</a>
+
         </div>
       </nav>
-    {% endif %}
   </div>
 </header>

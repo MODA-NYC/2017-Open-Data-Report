@@ -89,6 +89,7 @@ input[type=text] {
 // 3. Element  Styles
 
 .site-header {
+  border: 0;
   padding-top: 2rem;
 }
 
@@ -98,6 +99,17 @@ input[type=text] {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
+  transition: .2s opacity ease;
+
+  &:active,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 .site-footer {
