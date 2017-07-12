@@ -2,44 +2,11 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <img class="logo logoLong" src="{{ site.baseurl }}/assets/img/logo-nyc-open-data.png" alt="NYC Open Data logo" />
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+    <img class="logo" src="{{ site.baseurl }}/assets/img/logo-nyc-moda.png" alt="NYC Mayor's Office of Data and Analytics logo" />
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
+    <img class="logo" src="{{ site.baseurl }}/assets/img/logo-nyc-doitt.png" alt="NYC Department of Information Technology and Telecommunication logo" />
 
   </div>
 

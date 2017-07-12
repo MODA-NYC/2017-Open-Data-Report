@@ -121,6 +121,15 @@ p.small {
   background: $blue;
 }
 
+.logo {
+  height: 4rem;
+  margin-right: 3rem;
+}
+
+.logo.logoLong {
+  height: 2rem;
+}
+
 .flexWrap {
   display: flex;
   flex-wrap: wrap;
