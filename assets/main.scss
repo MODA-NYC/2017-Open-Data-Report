@@ -6,14 +6,19 @@
 
 // 0. Mixins & Variables
 
-@mixin breakpoint($point) {
-  @if $point == tablet {
-    @media (max-width: 768px) { @content; }
-  }
-  @else if $point == mobile {
-    @media (max-width: 600px)  { @content; }
-  }
-}
+// Available media-queries
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+$on-tablet:        1024px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
 
 $sans-serif: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: 'Lora', serif;
@@ -176,12 +181,20 @@ p.small {
 
     .boldNumber {
       font-size: 4rem;
+
+      @include media-query($on-tablet) {
+        font-size: 2.5rem;
+      }
     }
 
     .boldNumber__heading {
       font-size: 1.4rem;
       font-weight: 500;
       margin: 0;
+
+      @include media-query($on-tablet) {
+        font-size: 1.3rem;
+      }
     }
 
     a {
@@ -249,6 +262,10 @@ p.small {
   display: flex;
   padding: 0 1rem;
   margin: 1rem auto 3rem;
+
+  @include media-query($on-tablet) {
+    flex-direction: column;
+  }
 }
 
 .flexContent,
@@ -260,8 +277,8 @@ p.small {
 // this width comes from the Minima .wrapper property
 
 .flexContent {
-  width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
 }
 
 .flexSidebar__left,
@@ -288,7 +305,7 @@ p.small {
   color: $grey;
   z-index: 0;
 
-  @include breakpoint('tablet') {
+  @include media-query($on-tablet) {
     font-size: 20px;
   }
 }
