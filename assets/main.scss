@@ -80,6 +80,12 @@ input[type=text] {
   padding: .8rem 1rem;
 }
 
+.metaContent p {
+  font-family: $sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
 // 2. Modifiers
 
 .grey {
@@ -89,6 +95,25 @@ input[type=text] {
 p.small {
   font-size: 1rem;
   color: $grey;
+}
+
+.light {
+  font-weight: 500;
+}
+
+.borderTop {
+  position: relative;
+  margin-top: 1.5rem;
+
+  &:before {
+    background: #000;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -1rem;
+    width: 3rem;
+  }
 }
 
 // 3. Element  Styles
@@ -162,6 +187,35 @@ p.small {
 .boldNumber__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+// this property wraps around a three column full-width section
+
+.flexContentWrapper {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.flexContent,
+.flexSidebar__left,
+.flexSidebar__right {
+  padding: 0 1rem;
+}
+
+// this width comes from the Minima .wrapper property
+
+.flexContent {
+  width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+}
+
+.flexSidebar__left,
+.flexSidebar__right {
+  flex: 1;
+}
+
+.userFeature {
+  margin-bottom: 3rem;
 }
 
 // 4. Timeline Styles

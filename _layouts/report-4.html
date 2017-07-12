@@ -4,17 +4,100 @@ layout: report
 
 <div class="wrapper">
 
+  <h1>Open Data for All:<br />User Stories</h1>
+
   {% capture intro %}{% include /content/4.0-user-stories.md %}{% endcapture %}
   {{ intro | markdownify }}
 
-  {% capture story1 %}{% include /content/4.1-user-story.md %}{% endcapture %}
-  {{ story1 | markdownify }}
+</div>
 
-  {% capture story2 %}{% include /content/4.2-user-story.md %}{% endcapture %}
-  {{ story2 | markdownify }}
+<div class="flexContentWrapper">
 
-  {% capture story3 %}{% include /content/4.3-user-story.md %}{% endcapture %}
-  {{ story3 | markdownify }}
+  <div class="flexSidebar__left">
+    <img src="{{ site.baseurl }}/assets/img/userstory-1.png" alt="Team from Municipal Art Society shaking hands with Bill DiBlasio" />
+  </div>
+
+  <div class="flexContent">
+    {% capture story1 %}{% include /content/4.1-user-story.md %}{% endcapture %}
+    {{ story1 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“We use Open Data as much as we can in our advocacy, to substantiate anything we’re saying.”</p>
+    </blockquote>
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img src="{{ site.baseurl }}/assets/img/userstory-2.png" alt="A map of Manhattan neighboor scores from Renthop" />
+
+  </div>
+
+  <div class="flexContent">
+    {% capture story2 %}{% include /content/4.2-user-story.md %}{% endcapture %}
+    {{ story2 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<img class="userFeature" src="{{ site.baseurl }}/assets/img/userstory-3.jpg" alt="Rob Elliot and Nandan Shetty sitting on a bench, talking." />
+
+<div class="flexContentWrapper">
+  <div class="flexSidebar__left metaContent">
+    <div class="borderTop">
+      <p><span class="light">Name:</span><br />
+        Nandan Shetty
+      </p>
+      <p><span class="light">Lives:</span>
+        Morningside Heights,<br />
+        Manhattan
+      </p>
+      <p><span class="light">Occupation:</span><br />
+        Forestry Horticulture & Natural Resources, NYC Parks
+      </p>
+    </div>
+
+    <div class="borderTop">
+      <p><span class="light">Name:</span><br />
+        Rob Elliott
+      </p>
+      <p><span class="light">Lives:</span>
+        Morningside Heights,<br />
+        Manhattan
+      </p>
+      <p><span class="light">Occupation:</span><br />
+        Earth Institute Postdoctoral Fellow, Columbia University
+      </p>
+    </div>
+  </div>
+
+  <div class="flexContent">
+    {% capture story3 %}{% include /content/4.3-user-story.md %}{% endcapture %}
+    {{ story3 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+    <blockquote>
+      <p>“It was really cool to see what people who didn’t have their heads buried in street trees for a year had to offer—they brought a very new perspective to it, lots of cool ideas came out of the DataJam.”</p>
+    </blockquote>
+
+  </div>
+
+</div>
+
+
+
+<div class="wrapper">
+
 
   {% capture story4 %}{% include /content/4.4-user-story.md %}{% endcapture %}
   {{ story4 | markdownify }}
