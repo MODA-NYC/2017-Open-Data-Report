@@ -13,5 +13,3 @@ We want to hear from you. Request a dataset for release. Leave a comment on the 
 We hope you'll join us in our continued efforts to making Open Data for All.
 
 —NYC Open Data team
-
->Open data didn’t become reality in New York City just because it’s a best practice. The program thrives today, five years after the Open Data law, because New Yorkers like you are engaging openly with your government and the wealth of data it creates.

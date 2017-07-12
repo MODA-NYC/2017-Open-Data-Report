@@ -121,6 +121,7 @@ p.small {
 .site-header {
   border: 0;
   padding-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .site-title {
@@ -153,6 +154,55 @@ p.small {
 
 .logo.logoLong {
   height: 2rem;
+}
+
+.reportNav {
+  background: $darkGrey;
+
+  ul {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  li {
+    list-style-type: none;
+    flex: 1;
+    max-width: 11rem;
+    margin: 0;
+
+    &:first-child a {
+      border-left: 0;
+    }
+
+    .boldNumber {
+      font-size: 4rem;
+    }
+
+    .boldNumber__heading {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    a {
+      border-left: 1px solid #fff;
+      border-top: 1px solid #fff;
+      display: block;
+      padding: 1rem;
+      transition: .2s all ease;
+    }
+
+    a:link,
+    a:visited,
+    a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: .8;
+    }
+  }
 }
 
 .flexWrap {
