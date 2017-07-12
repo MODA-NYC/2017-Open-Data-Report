@@ -86,6 +86,11 @@ input[type=text] {
   color: $grey;
 }
 
+p.small {
+  font-size: 1rem;
+  color: $grey;
+}
+
 // 3. Element  Styles
 
 .site-header {
@@ -116,9 +121,38 @@ input[type=text] {
   background: $blue;
 }
 
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mod {
+  border-top: 1px solid #000;
+  flex-basis: 18rem;
+  margin: 1rem 3rem 3rem 0;
+  padding-top: 1rem;
+}
+
 .featureImage {
   display: block;
   margin: 0 auto 3rem;
+}
+
+.boldNumber,
+.boldNumber__heading {
+  display: block;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.boldNumber {
+  font-size: 8rem;
+  text-rendering: optimizeLegibility;
+}
+
+.boldNumber__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 // 4. Timeline Styles
