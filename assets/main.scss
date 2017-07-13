@@ -436,6 +436,10 @@ button {
       padding-top: 50px;
       background: #000;
 
+      @include media-query($on-palm) {
+        margin: 0 0 0 2rem;
+      }
+
       &.city {
         div {
           border-color: $blue;
@@ -459,6 +463,10 @@ button {
         visibility: hidden;
         opacity: 0;
         transition: all .5s ease-in-out;
+
+        @include media-query($on-palm) {
+          width: 230px;
+        }
       }
 
       &::after {
@@ -485,6 +493,10 @@ button {
         left: -439px;
         /* Animation */
         transform: translate3d(-200px, 0, 0);
+
+        @include media-query($on-palm) {
+          left: 1.1rem;
+        }
       }
 
       &.in-view.city {
