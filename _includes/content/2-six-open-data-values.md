@@ -1,4 +1,4 @@
-# 6 Open Data Values
+# Six Open Data Values
 
 ## Start with Users
 
