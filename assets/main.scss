@@ -373,6 +373,10 @@ button {
 
 // 4. Timeline Styles
 
+.timeline ul {
+  margin: 1rem auto 6rem;
+}
+
 .timeline__section {
   position: relative;
 }
@@ -384,6 +388,7 @@ button {
   font-weight: 700;
   margin: 20px 0 0 30px;
   color: $grey;
+  right: 0;
   z-index: 0;
 
   @include media-query($on-tablet) {
@@ -431,6 +436,18 @@ button {
       padding-top: 50px;
       background: #000;
 
+      &.city {
+        div {
+          border-color: $blue;
+        }
+      }
+
+      &.community {
+        div {
+          border-color: $yellow;
+        }
+      }
+
       div {
         border-top: 2px solid;
         position: relative;
@@ -468,6 +485,20 @@ button {
         left: -439px;
         /* Animation */
         transform: translate3d(-200px, 0, 0);
+      }
+
+      &.in-view.city {
+        //
+        &::after {
+          background: $blue;
+        }
+      }
+
+      &.in-view.community {
+        //
+        &::after {
+          background: $yellow;
+        }
       }
 
       &.in-view {
