@@ -166,6 +166,12 @@ button {
   }
 }
 
+.icon {
+  display: block;
+  margin: auto;
+  max-width: 12rem;
+}
+
 .site-header {
   border: 0;
   padding-top: 2rem;
@@ -355,6 +361,10 @@ button {
 .flexSidebar__right {
   flex: 1;
   min-width: 14rem;
+
+  @include media-query($on-tablet) {
+    margin-bottom: 2rem;
+  }
 }
 
 .userFeature {

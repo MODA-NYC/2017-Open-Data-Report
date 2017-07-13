@@ -1,11 +1,115 @@
 ---
 layout: report
 ---
-
 <div class="wrapper">
 
-  {% capture values %}{% include /content/2-six-open-data-values.md %}{% endcapture %}
-  {{ values | markdownify }}
+  <h1>Six Open Data Values</h1>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-1.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value1 %}{% include /content/2.1-value.md %}{% endcapture %}
+    {{ value1 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-2.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value2 %}{% include /content/2.2-value.md %}{% endcapture %}
+    {{ value2 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-3.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value3 %}{% include /content/2.3-value.md %}{% endcapture %}
+    {{ value3 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-4.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value4 %}{% include /content/2.4-value.md %}{% endcapture %}
+    {{ value4 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-5.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value5 %}{% include /content/2.5-value.md %}{% endcapture %}
+    {{ value5 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <img class="icon" src="{{ site.baseurl }}/assets/img/value-6.svg" alt="Open data value icon" />
+  </div>
+
+  <div class="flexContent">
+    {% capture value6 %}{% include /content/2.6-value.md %}{% endcapture %}
+    {{ value6 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
+<div class="wrapper">
 
   <button><a href="{{ site.baseurl }}/report/a-year-in-data/">Next:<br />3. A Year in Data</a></button>
 
