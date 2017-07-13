@@ -142,7 +142,7 @@ button {
   font-family: $sans-serif;
   font-weight: 700;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 0;
   transition: .2s all ease;
 
   &:hover {
@@ -150,6 +150,8 @@ button {
   }
 
   a {
+    display: block;
+    padding: 1rem;
     transition: .2s all ease;
 
     &:link,
