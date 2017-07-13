@@ -76,6 +76,10 @@ blockquote p {
   line-height: 1.2;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .commentForm {
   border-top: 1px solid #000;
   margin: 2rem auto 3rem;
@@ -352,6 +356,54 @@ button {
 .boldNumber__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.tabs__nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__nav__link {
+  flex: 1;
+  margin-right: 4px;
+  padding: 12px;
+  color: #fff;
+  background-color: #b3b3b3;
+  text-align: center;
+  transition: color 0.3s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.is-active {
+    color: #dc446e;
+    background-color: #e7e7e7;
+  }
+}
+
+.tabs__nav__link span {
+  display: none;
+  font-size: 18px;
+
+  @include media-query($on-palm) {
+    display: block;
+  }
+}
+
+.tab {
+  display: none;
+  background-color: #e7e7e7;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.tab__content {
+  padding: 1.5rem;
 }
 
 table {

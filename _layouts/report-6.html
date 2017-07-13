@@ -3,16 +3,53 @@ layout: report
 ---
 
 <div class="wrapper">
-
-  {% capture participating %}{% include /content/6-participating-agencies.md %}{% endcapture %}
-  {{ participating | markdownify }}
-
+  <h1>Compliance Plan</h1>
 
 </div>
 
-<div class="flexContentWrapper">
-
-  {% capture futureReleases %}{% include /content/6.1-future-releases.md %}{% endcapture %}
-  {{ futureReleases | markdownify }}
-
+<div class="tabs">
+  <nav class="tabs__nav tabSticker">
+    <a href="#" class="tabs__nav__link is-active">Participating Agencies</a>
+    <a href="#" class="tabs__nav__link">Datasets Scheduled for Release</a>
+    <a href="#" class="tabs__nav__link">Datasets removed from Open Data Plan</a>
+    <a href="#" class="tabs__nav__link">Freedom of Information Law reporting</a>
+    <a href="#" class="tabs__nav__link">Geospatial and Street Address Standards</a>
+    <a href="#" class="tabs__nav__link">Timely Updates reporting</a>
+  </nav>
+  <div class="tab is-active">
+    <div class="tab__content">
+      {% capture participating %}{% include /content/6-participating-agencies.md %}{% endcapture %}
+      {{ participating | markdownify }}
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab__content">
+      {% capture futureReleases %}{% include /content/6.1-future-releases.md %}{% endcapture %}
+      {{ futureReleases | markdownify }}
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab__content">
+      {% capture removals %}{% include /content/6.2-removals.md %}{% endcapture %}
+      {{ removals | markdownify }}
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab__content">
+      {% capture foil %}{% include /content/6.3-foil.md %}{% endcapture %}
+      {{ foil | markdownify }}
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab__content">
+      {% capture address %}{% include /content/6.4-address-standards.md %}{% endcapture %}
+      {{ address | markdownify }}
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab__content">
+      {% capture removals %}{% include /content/6.5-timely-updates.md %}{% endcapture %}
+      {{ removals | markdownify }}
+    </div>
+  </div>
 </div>

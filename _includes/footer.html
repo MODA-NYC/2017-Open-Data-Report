@@ -18,3 +18,12 @@
 {% if page.layout == 'report-3' %}
 <script src="{{ site.baseurl }}/assets/js/timeline.js"></script>
 {% else %}{% endif %}
+
+{% if page.layout == 'report-6' %}
+<script src="{{ site.baseurl }}/assets/js/tabs.js"></script>
+<script>
+$(document).ready(function(){
+  $(".tabSticker").sticky({topSpacing:103, zIndex: 10});
+});
+</script>
+{% else %}{% endif %}
