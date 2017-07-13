@@ -213,6 +213,10 @@ button {
 .reportNav {
   background: $darkGrey;
 
+  @include media-query($on-palm) {
+    position: static !important;
+  }
+
   ul {
     justify-content: center;
     margin: 0;
@@ -221,6 +225,11 @@ button {
     @include media-query($on-palm) {
       flex-wrap: wrap;
       padding: .5rem 1rem;
+    }
+
+    // this is when the nav bar is stuck to the top of the browser
+    .is-sticky & {
+      padding: 0 2rem;
     }
   }
 
@@ -249,6 +258,8 @@ button {
 
     .boldNumber {
       font-size: 4rem;
+      margin-bottom: .4rem;
+      transition: .2s all ease;
 
       @include media-query($on-tablet) {
         font-size: 2.5rem;
@@ -257,12 +268,17 @@ button {
       @include media-query($on-palm) {
         font-size: 2rem;
       }
+
+      .is-sticky & {
+        font-size: 2rem;
+      }
     }
 
     .boldNumber__heading {
       font-size: 1.4rem;
       font-weight: 500;
       margin: 0;
+      transition: .2s all ease;
 
       @include media-query($on-tablet) {
         font-size: 1.3rem;
@@ -270,6 +286,11 @@ button {
 
       @include media-query($on-palm) {
         font-size: 1.1rem;
+      }
+
+      // this is when the nav bar is stuck to the top of the browser
+      .is-sticky & {
+        font-size: 1rem;
       }
     }
 
@@ -529,3 +550,5 @@ button {
     }
   }
 }
+
+// 5. Plug-in Styles
