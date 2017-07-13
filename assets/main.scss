@@ -212,6 +212,7 @@ button {
 
 .reportNav {
   background: $darkGrey;
+  z-index: 10;
 
   @include media-query($on-palm) {
     position: static !important;
