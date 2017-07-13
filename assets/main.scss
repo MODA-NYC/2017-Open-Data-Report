@@ -76,6 +76,18 @@ blockquote p {
   line-height: 1.2;
 }
 
+figcaption {
+  font-family: $serif;
+  font-size: 1rem;
+  font-style: italic;
+  margin: .8rem 0 0;
+
+  // if in a full-bleed div, have some left margin
+  .userFeature & {
+    margin-left: 2rem;
+  }
+}
+
 strong {
   font-weight: 700;
 }
@@ -351,11 +363,24 @@ button {
   .flexSidebar__left & {
     font-size: 10rem;
   }
+
+  .flexSidebar__left figure & {
+    font-size: 5rem;
+    color: #fff;
+    margin: .5rem 0 0 1rem;
+    position: absolute;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  }
+
 }
 
 .boldNumber__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+figure {
+  position: relative;
 }
 
 .tabs__nav {
