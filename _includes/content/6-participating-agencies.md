@@ -1,4 +1,4 @@
-# Participating Agencies
+## Participating Agencies
 
 Each City agency’s data publishing effort is led by a dedicated Open Data Coordinator. This year, 42 smaller offices appointed new Open Data Coordinators bringing the total to the 92 participating agencies, listed here.
 
