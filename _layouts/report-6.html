@@ -7,6 +7,12 @@ layout: report
   {% capture participating %}{% include /content/6-participating-agencies.md %}{% endcapture %}
   {{ participating | markdownify }}
 
-  {{ content }}
+
+</div>
+
+<div class="flexContentWrapper">
+
+  {% capture futureReleases %}{% include /content/6.1-future-releases.md %}{% endcapture %}
+  {{ futureReleases | markdownify }}
 
 </div>
