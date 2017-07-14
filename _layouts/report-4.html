@@ -231,6 +231,27 @@ layout: report
 
 </div>
 
+<div class="flexContentWrapper">
+
+  <div class="flexSidebar__left metaContent">
+    <figure>
+      <span class="boldNumber">8</span>
+      <img src="{{ site.baseurl }}/assets/img/userstory-8.jpg" alt="A dog, Rocco, shakes a human's hand and smiles for the camera." />
+      <figcaption>Photo: ASPCA</figcaption>
+    </figure>
+  </div>
+
+  <div class="flexContent">
+    {% capture story8 %}{% include /content/4.8-user-story.md %}{% endcapture %}
+    {{ story8 | markdownify }}
+  </div>
+
+  <div class="flexSidebar__right">
+
+  </div>
+
+</div>
+
 <div class="wrapper">
 
   <button><a href="{{ site.baseurl }}/report/policy-and-compliance/">Next:<br />5. Policy &amp; Compliance</a></button>
