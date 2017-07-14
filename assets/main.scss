@@ -124,9 +124,17 @@ p.small {
   font-weight: 500;
 }
 
+.right {
+  text-align: right;
+}
+
 .centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+.alignMiddle {
+  align-items: center;
 }
 
 .borderTop {
@@ -219,11 +227,18 @@ button {
 
 .site-footer {
   background: $blue;
+
+  a:link,
+  a:active,
+  a:hover,
+  a:visited {
+    color: #fff;
+  }
 }
 
 .logo {
   height: 4rem;
-  margin-right: 3rem;
+  margin: 2rem 2rem 2rem 0;
 }
 
 .logo.logoLong {
@@ -349,6 +364,14 @@ button {
 .flexWrap {
   display: flex;
   flex-wrap: wrap;
+
+  col-1 {
+    flex: 1;
+  }
+
+  col-2 {
+    flex: 2;
+  }
 }
 
 .mod {
