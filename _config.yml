@@ -16,7 +16,7 @@
 title: 2017 Open Data Progress Report
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Over the past two years, our Open Data for All strategy has helped realize the promise of open information by putting data into the hands of New Yorkers who are featured in this report using open data to make a difference in their communities. We hope these stories will inspire you to think about how you can make positive change in your community.
+  The real promise of Open Data is not about what the City does: It’s about New Yorkers like you. Your right to access government information has long been a cornerstone of modern civics
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-102575244-1
