@@ -226,6 +226,16 @@ button {
   height: 2rem;
 }
 
+// this prevents the sticky, resizing nav from bouncing
+.reportNav__wrapper {
+  background: rgba(0,0,0,.0);
+  height: 200px;
+
+  @include media-query($on-tablet) {
+    height: auto;
+  }
+}
+
 .reportNav {
   background: $darkGrey;
   z-index: 10;
@@ -644,3 +654,7 @@ tr:nth-of-type(odd) {
 }
 
 // 5. Plug-in Styles
+
+.sticky-wrapper {
+  transition: .2s all ease;
+}
