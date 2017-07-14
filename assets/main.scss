@@ -247,12 +247,25 @@ button {
 }
 
 .logo {
-  height: 4rem;
-  margin: 2rem 2rem 2rem 0;
+  width: 10em;
+
+  .flexWrap & {
+    padding: .5rem;
+  }
 }
 
-.logo.logoLong {
-  height: 2rem;
+footer .flexWrap {
+
+  .logo.logoLong {
+    height: 2rem;
+  }
+
+  .logo {
+    height: 4rem;
+    margin: 2rem 2rem 2rem 0;
+    padding: 0;
+    width: auto;
+  }
 }
 
 // this prevents the sticky, resizing nav from bouncing

@@ -8,34 +8,4 @@ In New York City, two partners form the Open Data team: the [Mayor's Office of D
 
 As the Open Data team marks the third year of New York City's Open Data for All vision, we want to thank the incredibly dedicated and hardworking teams across NYC government, and the community members and institutions across all five boroughs, who have helped make Open Data a reality for New Yorkers. Without their support, Open Data would not be possible.
 
-### City collaborators for support beyond data publishing:
-
-- Mayor’s Office of Operations
-- DoITT UX Team
-- DoITT Geocoding Team
-- Mayor’s Office of People with Disabilities
-- Mayor’s Fund
-- Mayor’s Office of Technology and Innovation
-- Parks Computer Resource Centers
-- Manhattan Borough President’s Office
-- City Council
-- Department of Records and Information Services
-
-### Community collaborators:
-
-- BetaNYC
-- Civic Hall
-- Civic Hall Labs
-- Center for Government Excellence
-- Civic Analytics Network
-- Sunlight
-- Reboot
-- GovLab
-- BureauBlank
-- Carto
-- Microsoft
-- Vizalytics
-- General Assembly
-- Made in NY Media Center
-- Pratt Institute's Spatial Analysis and Visualization Initiative
-- Columbia University Social Work Library
+{% include collaborators.html %}
