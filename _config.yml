@@ -19,6 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Over the past two years, our Open Data for All strategy has helped realize the promise of open information by putting data into the hands of New Yorkers who are featured in this report using open data to make a difference in their communities. We hope these stories will inspire you to think about how you can make positive change in your community.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-102575244-1
 twitter_username: NYCAnalytics
 github_username:  MODA-NYC
 
