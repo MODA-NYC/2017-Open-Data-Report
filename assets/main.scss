@@ -427,16 +427,37 @@ figure {
   position: relative;
 }
 
+.tab {
+
+  // content within tabs should't span edge to edge on large displays
+  h2,
+  p,
+  ul {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .tabs__nav {
+  box-sizing: border-box;
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem;
+
+  // prevent sticking on tablets and mobile
+  @include media-query($on-tablet) {
+    height: auto;
+    position: static !important;
+  }
 }
 
 .tabs__nav__link {
+  border-right: 1px solid #fff;
   flex: 1;
-  margin-right: 4px;
+  margin: 0;
   padding: 12px;
   color: #fff;
   background-color: #b3b3b3;
@@ -444,7 +465,7 @@ figure {
   transition: color 0.3s;
 
   &:last-child {
-    margin-right: 0;
+    border-right: 0;
   }
 
   &.is-active {
