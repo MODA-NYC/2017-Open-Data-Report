@@ -252,16 +252,13 @@ button {
 
   @include media-query($on-tablet) {
     height: auto;
+    position: static !important;
   }
 }
 
 .reportNav {
   background: $darkGrey;
   z-index: 10;
-
-  @include media-query($on-palm) {
-    position: static !important;
-  }
 
   ul {
     justify-content: center;
