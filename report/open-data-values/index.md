@@ -1,5 +1,5 @@
 ---
-title: Six Open Data Values
+title: Open Data Values
 layout: report-2
 ---
 
