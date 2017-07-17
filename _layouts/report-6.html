@@ -3,9 +3,8 @@ layout: report
 ---
 
 <div class="wrapper">
-  <h1>Compliance Plan</h1>
-  <p>The Open Data Law requires the Department of Information Technology and Telecommunications (DoITT) to publish an annual Compliance Plan. The tables below capture these reporting requirements, including a full dataset publishing schedule, changes in release dates listed on previous Open Data Plans, data disclosures in Freedom of Information Law (FOIL) responses, information on datasets maintained on agency websites, and datasets eligible for geospatial standardization.</p>
-
+  {% capture compliancePlan %}{% include /content/6.0-compliance-plan.md %}{% endcapture %}
+  {{ compliancePlan | markdownify }}
 </div>
 
 <div class="tabs">
@@ -19,37 +18,37 @@ layout: report
   </nav>
   <div class="tab is-active">
     <div class="tab__content">
-      {% capture participating %}{% include /content/6-participating-agencies.md %}{% endcapture %}
+      {% capture participating %}{% include /content/6.1-participating-agencies.md %}{% endcapture %}
       {{ participating | markdownify }}
     </div>
   </div>
   <div class="tab">
     <div class="tab__content">
-      {% capture futureReleases %}{% include /content/6.1-future-releases.md %}{% endcapture %}
+      {% capture futureReleases %}{% include /content/6.2-future-releases.md %}{% endcapture %}
       {{ futureReleases | markdownify }}
     </div>
   </div>
   <div class="tab">
     <div class="tab__content">
-      {% capture removals %}{% include /content/6.2-removals.md %}{% endcapture %}
+      {% capture removals %}{% include /content/6.3-removals.md %}{% endcapture %}
       {{ removals | markdownify }}
     </div>
   </div>
   <div class="tab">
     <div class="tab__content">
-      {% capture foil %}{% include /content/6.3-foil.md %}{% endcapture %}
+      {% capture foil %}{% include /content/6.4-foil.md %}{% endcapture %}
       {{ foil | markdownify }}
     </div>
   </div>
   <div class="tab">
     <div class="tab__content">
-      {% capture address %}{% include /content/6.4-address-standards.md %}{% endcapture %}
+      {% capture address %}{% include /content/6.5-address-standards.md %}{% endcapture %}
       {{ address | markdownify }}
     </div>
   </div>
   <div class="tab">
     <div class="tab__content">
-      {% capture removals %}{% include /content/6.5-timely-updates.md %}{% endcapture %}
+      {% capture removals %}{% include /content/6.6-timely-updates.md %}{% endcapture %}
       {{ removals | markdownify }}
     </div>
   </div>
